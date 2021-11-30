@@ -4,7 +4,7 @@ import random
 
 from flask import Flask, redirect, url_for, request, render_template
 
-r = redis.Redis(host=os.environ['URL'], port=os.environ['PORT'], password=os.environ['PASSWORD'], decode_responses=True)
+r = redis.Redis(host=os.environ['URL'], port=os.environ['PORT'],  decode_responses=True)
 app = Flask(__name__)
 
 @app.route('/')
